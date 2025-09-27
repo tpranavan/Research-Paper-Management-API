@@ -14,8 +14,8 @@ mvn spring-boot:run
 A Spring Boot application to manage research papers with JWT-based authentication.
 
 ---
-
-## 🔑 Authentication
+```
+🔑 Authentication
 
 Login to get a JWT token (valid for 2 days):
 
