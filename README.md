@@ -1,8 +1,11 @@
-# ⚙️ Project Setup
+# Research Paper Management API
 
-### unzip the project:
+A Spring Boot application to manage research papers with JWT-based authentication.
+
+
+## ⚙️ Project Setup
+ unzip the project:
 ```bash
-
 cd research-paper-management-api
 
 mvn clean package
@@ -13,29 +16,10 @@ mvn spring-boot:run
 
 A Spring Boot application to manage research papers with JWT-based authentication.
 
----
 ```
-🔑 Authentication
+### 🔑 Authentication
 
-Login to get a JWT token (valid for 2 days):
-
-```bash
-curl --request POST   --url http://localhost:8080/auth/login   --header 'Content-Type: application/json'   --data '{"username":"admin","password":"1234"}'
-```
-
-Response:
-```json
-{
-  "token": "<jwt-token>",
-  "expiresIn": 172800
-}
-```
-
-Use the token in the `Authorization` header for all protected endpoints:
-
-```
-Authorization: Bearer <jwt-token>
-```
+JWT-based authentication with credentials loaded from a login.json file.
 
 ---
 
